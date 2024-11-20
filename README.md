@@ -1,8 +1,8 @@
 # Shell Linter
 
-[![Release](https://img.shields.io/github/release/azohra/shell-linter.svg)](https://github.com/azohra/shell-linter/releases)
-[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-red.svg)](https://github.com/marketplace/actions/shell-linter)
-[![Actions Status](https://github.com/azohra/shell-linter/workflows/CI-workflow/badge.svg)](https://github.com/azohra/shell-linter/actions?query=branch%3Adevelop)
+[![Release](https://img.shields.io/github/release/Tumiya/lint-shell.svg)](https://github.com/Tumiya/lint-shell/releases)
+[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-red.svg)](https://github.com/marketplace/actions/lint-shell)
+[![Actions Status](https://github.com/Tumiya/lint-shell/workflows/CI-workflow/badge.svg)](https://github.com/Tumiya/lint-shell/actions?query=branch%3Adevelop)
 
 
 A GitHub Action that performs static analysis for shell scripts using [ShellCheck](https://github.com/koalaman/shellcheck).
@@ -25,13 +25,13 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
 ```
 
 #### Run static analysis for a single shell script:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           path: "setup.sh"
 ```
@@ -39,7 +39,7 @@ jobs:
 #### Run static analysis for multiple shell scripts **with or without** extension:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           path: "setup,deploy.sh"
 ```
@@ -47,7 +47,7 @@ jobs:
 #### Run static analysis for all the shell scripts in a folder:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           path: "src"
 ```
@@ -55,14 +55,14 @@ jobs:
 #### Run static analysis using a **wildcard** path:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           path: "src/*.sh"
 ```
 #### Exclude files and folders from the static analysis:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           exclude-paths: "src/setup.sh,tests/unit_tests" 
 ```
@@ -73,7 +73,7 @@ To exclude a folder and it's content recursively just provide the path of the fo
 #### Run static analysis for all the shell scripts and only report issues with error severity while excluding specific issues:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
+        uses: Tumiya/lint-shell@latest
         with:
           path: "src/*.sh"
           severity: "error"
@@ -84,7 +84,7 @@ Note that `exclude-issues` contains a comma-separated list of ShellCheck issues 
 #### Run analysis by using a specific version of Shell Linter:
 ```yml
       - name: Run ShellCheck
-        uses: azohra/shell-linter@v0.6.0
+        uses: Tumiya/lint-shell@v0.6.0
 ```
 
 # Input

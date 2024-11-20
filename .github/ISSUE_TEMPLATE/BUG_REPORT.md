@@ -6,7 +6,7 @@ about: Report a bug or something that is not working as expected
 
 ## New Issue Checklist
 
-- [ ] Using the latest version of azohra/shell-linter
+- [ ] Using the latest version of Tumiya/lint-shell
 - [ ] Able to reproduce error multiple times
 - [ ] Provided information about the bug
 - [ ] Attached additional information about the error including logs
@@ -36,7 +36,7 @@ about: Report a bug or something that is not working as expected
 ```
 
 ### Link to the GitHub Actions workflow (optional)
-<!-- Please include a link to your project using the shell-linter action. This is optional. -->
+<!-- Please include a link to your project using the lint-shell action. This is optional. -->
 ```
 <ADD-WORKFLOW-DETAILS-HERE>
 ```
